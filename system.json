@@ -2,7 +2,7 @@
   "id": "armagedon",
   "title": "Armagedon",
   "description": "Sistema d20 personalizado para la campaña Armagedon.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "compatibility": {
     "minimum": 14,
     "verified": 14
@@ -12,5 +12,15 @@
       "name": "ShiroiVanr"
     }
   ],
-  "initiative": "1d20"
+  "initiative": "1d20",
+
+  "esmodules": [
+    "scripts/armagedon.mjs"
+  ],
+
+  "documentTypes": {
+    "Actor": {
+      "character": {}
+    }
+  }
 }
