@@ -1,0 +1,16 @@
+{
+  "id": "armagedon",
+  "title": "Armagedon",
+  "description": "Sistema d20 personalizado para la campaña Armagedon.",
+  "version": "0.0.1",
+  "compatibility": {
+    "minimum": 14,
+    "verified": 14
+  },
+  "authors": [
+    {
+      "name": "ShiroiVanr"
+    }
+  ],
+  "initiative": "1d20"
+}
