@@ -1,0 +1,115 @@
+<div class="character-sheet-content">
+
+  <header>
+    <img
+      src="{{actor.img}}"
+      data-edit="img"
+      width="80"
+      height="80"
+    >
+
+    <input
+      name="name"
+      type="text"
+      value="{{actor.name}}"
+    >
+  </header>
+
+  <hr>
+
+  <section>
+    <h2>Características</h2>
+
+    <label>
+      STR
+      <input
+        type="number"
+        name="system.abilities.str"
+        value="{{system.abilities.str}}"
+      >
+    </label>
+
+    <label>
+      DEX
+      <input
+        type="number"
+        name="system.abilities.dex"
+        value="{{system.abilities.dex}}"
+      >
+    </label>
+
+    <label>
+      CON
+      <input
+        type="number"
+        name="system.abilities.con"
+        value="{{system.abilities.con}}"
+      >
+    </label>
+
+    <label>
+      INT
+      <input
+        type="number"
+        name="system.abilities.int"
+        value="{{system.abilities.int}}"
+      >
+    </label>
+
+    <label>
+      WIS
+      <input
+        type="number"
+        name="system.abilities.wis"
+        value="{{system.abilities.wis}}"
+      >
+    </label>
+
+    <label>
+      CHA
+      <input
+        type="number"
+        name="system.abilities.cha"
+        value="{{system.abilities.cha}}"
+      >
+    </label>
+  </section>
+
+  <hr>
+
+  <section>
+    <label>
+      HP
+      <input
+        type="number"
+        name="system.hp.value"
+        value="{{system.hp.value}}"
+      >
+      /
+      <input
+        type="number"
+        name="system.hp.max"
+        value="{{system.hp.max}}"
+      >
+    </label>
+
+    <label>
+      AC
+      <input
+        type="number"
+        name="system.ac"
+        value="{{system.ac}}"
+      >
+    </label>
+
+    <label>
+      PB
+      <input
+        type="number"
+        name="system.proficiency"
+        value="{{system.proficiency}}"
+      >
+    </label>
+  </section>
+
+</div>
