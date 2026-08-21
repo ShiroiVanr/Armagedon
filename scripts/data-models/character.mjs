@@ -78,6 +78,14 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
         nullable: false,
         integer: true,
         initial: 2
+      }),
+
+      level: new NumberField({
+        required: true,
+        nullable: false,
+        interger: true,
+        initial: 1,
+        min: 1,
       })
     };
   }

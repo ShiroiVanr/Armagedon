@@ -1,115 +1,136 @@
 <div class="character-sheet-content">
 
-  <header>
+  <header class="sheet-header">
     <img
       src="{{actor.img}}"
       data-edit="img"
-      width="80"
-      height="80"
+      width="100"
+      height="100"
     >
 
-    <input
-      name="name"
-      type="text"
-      value="{{actor.name}}"
-    >
+    <div class="identity-block">
+      <label>
+        Nombre
+        <input
+          name="name"
+          type="text"
+          value="{{actor.name}}"
+        >
+      </label>
+
+      <label>
+        Nivel
+        <input
+          type="number"
+          name="system.level"
+          value="{{system.level}}"
+        >
+      </label>
+    </div>
   </header>
 
   <hr>
 
-  <section>
+  <section class="abilities-section">
     <h2>Características</h2>
 
-    <label>
-      STR
-      <input
-        type="number"
-        name="system.abilities.str"
-        value="{{system.abilities.str}}"
-      >
-    </label>
+    <div class="abilities-grid">
 
-    <label>
-      DEX
-      <input
-        type="number"
-        name="system.abilities.dex"
-        value="{{system.abilities.dex}}"
-      >
-    </label>
+  <div class="ability-card">
+    <span class="ability-name">STR</span>
+    <span class="ability-modifier">{{formatedModifiers.str}}</span>
+    <input class="ability-score" type="number"
+      name="system.abilities.str"
+      value="{{system.abilities.str}}">
+  </div>
 
-    <label>
-      CON
-      <input
-        type="number"
-        name="system.abilities.con"
-        value="{{system.abilities.con}}"
-      >
-    </label>
+  <div class="ability-card">
+    <span class="ability-name">DEX</span>
+    <span class="ability-modifier">{{modifiers.dex}}</span>
+    <input class="ability-score" type="number"
+      name="system.abilities.dex"
+      value="{{system.abilities.dex}}">
+  </div>
 
-    <label>
-      INT
-      <input
-        type="number"
-        name="system.abilities.int"
-        value="{{system.abilities.int}}"
-      >
-    </label>
+  <div class="ability-card">
+    <span class="ability-name">CON</span>
+    <span class="ability-modifier">{{formatedModifiers.con}}</span>
+    <input class="ability-score" type="number"
+      name="system.abilities.con"
+      value="{{system.abilities.con}}">
+  </div>
 
-    <label>
-      WIS
-      <input
-        type="number"
-        name="system.abilities.wis"
-        value="{{system.abilities.wis}}"
-      >
-    </label>
+  <div class="ability-card">
+    <span class="ability-name">INT</span>
+    <span class="ability-modifier">{{formatedModifiers.int}}</span>
+    <input class="ability-score" type="number"
+      name="system.abilities.int"
+      value="{{system.abilities.int}}">
+  </div>
 
-    <label>
-      CHA
-      <input
-        type="number"
-        name="system.abilities.cha"
-        value="{{system.abilities.cha}}"
-      >
-    </label>
+  <div class="ability-card">
+    <span class="ability-name">WIS</span>
+    <span class="ability-modifier">{{formatedModifiers.wis}}</span>
+    <input class="ability-score" type="number"
+      name="system.abilities.wis"
+      value="{{system.abilities.wis}}">
+  </div>
+
+  <div class="ability-card">
+    <span class="ability-name">CHA</span>
+    <span class="ability-modifier">{{formatedModifiers.cha}}</span>
+    <input class="ability-score" type="number"
+      name="system.abilities.cha"
+      value="{{system.abilities.cha}}">
+  </div>
+
+</div>
   </section>
 
   <hr>
 
-  <section>
-    <label>
-      HP
-      <input
-        type="number"
-        name="system.hp.value"
-        value="{{system.hp.value}}"
-      >
-      /
-      <input
-        type="number"
-        name="system.hp.max"
-        value="{{system.hp.max}}"
-      >
-    </label>
+  <section class="combat-section">
+    <h2>Combate</h2>
 
-    <label>
-      AC
-      <input
-        type="number"
-        name="system.ac"
-        value="{{system.ac}}"
-      >
-    </label>
+    <div class="combat-grid">
 
-    <label>
-      PB
-      <input
-        type="number"
-        name="system.proficiency"
-        value="{{system.proficiency}}"
-      >
-    </label>
+      <label>
+        HP actual
+        <input
+          type="number"
+          name="system.hp.value"
+          value="{{system.hp.value}}"
+        >
+      </label>
+
+      <label>
+        HP máximo
+        <input
+          type="number"
+          name="system.hp.max"
+          value="{{system.hp.max}}"
+        >
+      </label>
+
+      <label>
+        AC
+        <input
+          type="number"
+          name="system.ac"
+          value="{{system.ac}}"
+        >
+      </label>
+
+      <label>
+        PB
+        <input
+          type="number"
+          name="system.proficiency"
+          value="{{system.proficiency}}"
+        >
+      </label>
+
+    </div>
   </section>
 
 </div>

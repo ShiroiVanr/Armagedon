@@ -1,0 +1,69 @@
+.armagedon.actor.character {
+  min-height: 400px;
+}
+
+.armagedon.actor.character .window-content {
+  overflow: hidden;
+}
+
+.armagedon.actor.character .character-sheet-content {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 0.5rem;
+}
+
+.sheet-header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.identity-block {
+  flex: 1;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.abilities-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.5rem;
+}
+
+.combat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.abilities-grid label,
+.combat-grid label,
+.identity-block label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.ability-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem;
+}
+
+.ability-name {
+  font-weight: bold;
+}
+
+.ability-modifier {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.ability-score {
+  width: 100%;
+  text-align: center;
+}

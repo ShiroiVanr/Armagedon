@@ -18,6 +18,10 @@
     "scripts/armagedon.mjs"
   ],
 
+  "styles": [
+    "styles/armagedon.css"
+  ],
+
   "documentTypes": {
     "Actor": {
       "character": {}
